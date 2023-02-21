@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+    <body>
+        <h1>Exemplo de formulário</h1>
+        <table border="1px">
+            <form action="">
+    
+                <tr>
+                    <td><label for="codigo_produto">Código</label></td>
+                    <td><input type="number" name="codigo" value="111" required min="1" max="999" id="codigo_produto"/></td>
+                </tr>
+    
+                <tr>
+                    <td><label for="nome_produto">Nome</label></td>
+                    <td><input type="text" name="nome_produto" required maxlength="20" placeholder="Digite o nome aqui..." id="nome_produto"
+                    pattern="[A-Z][A-Z0-9 ]{3,19}"/></td>
+                </tr>
+    
+                <tr>
+                    <td><label for="preco_produto">Preço</label></td>
+                    <td><input type="number" name="preco_produto" required min="0" max="9999" step="0.01" id="preco_produto"/></td>
+        
+                </tr>
+    
+                <tr>
+                    <td><label for="select_produto">Categoria</label><td>
+                        <select name="categoria_produto" id="select_categoria">
+                            <option value="" selected>Selecione a categoria</option>
+                            <option value="">Limpeza</option>
+                            <option value="">Construção</option>
+                        <option value="">Alimentício</option>
+                        </select>
+                     </td>
+                </tr>
+    
+                <tr>
+                    <td><label for="data_produto">Data</label></td>
+                    <td>
+                        <input type="date" name="data_produto" required />
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td><input type="submit" name="botao_enviar" id="botao_enviar" /></td>
+                </tr>
+            </form>
+        </table>
+    </body>
+</html>
