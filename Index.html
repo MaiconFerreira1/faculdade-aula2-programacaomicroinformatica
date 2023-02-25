@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body>
+    <h1>Cadastro de Remédios</h1>
+    <table>
+        <form action="https://www.google.com"></form>
+            <tr>
+                <td>
+                    <label for="codigo">Código: </label>
+                </td>
+                <td>
+                    <input type="number" id="codigo" required min="1000" max="9999" name="codigo">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="nome_fantasia">Nome Fantasia: </label>
+                </td>
+                <td>
+                    <input type="text" id="nome_fantasia" pattern="[A-Za-z0-9][A-Za-z0-9 ]{1,29}" maxlength="30" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="preco">Preço: </label>
+                </td>
+                <td>
+                    <input  name="preco" id="preco" type="number" min="0" step="0.01" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fabricantes">Fabricante: </label>
+                </td>
+                <td>
+                    <select name="fabricantes" id="fabricantes">
+                        <option name="fabricante_1" value="fabricante_1">Fabricante 1</option>
+                        <option name="fabricante_2" value="fabricante_2">Fabricante 2</option>
+                        <option name="fabricante_3" value="fabricante_3" selected>Fabricante 3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="data_compra">Data: </label>
+                </td>
+                <td>
+                    <input type="date" name="data_compra" min="2000-01-01" id="data_compra">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email_representante">Email Representante: </label>
+                </td>
+                <td>
+                    <input type="email" name="email_representante" id="email_representante" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="ENVIAR">
+                </td>
+            </tr>
+        </form>
+        </table>
+    </body>
+</html>
+
